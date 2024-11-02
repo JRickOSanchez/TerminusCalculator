@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100hv;
+    background-color: #f5f5f5;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.100);
+    width: 500px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.option-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.buttons button {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.buttons button img {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+}
+
+.buttons button:hover {
+    transform: scale(1.1);
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.actions button {
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.actions button:nth-child(1) {
+    background-color: white;
+    color: black;
+}
+
+.actions button:hover {
+    opacity: 0.9;
+}
+
+.result-label {
+    margin-top: 20px;
+    font-size: 26px;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.selected-label {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+}
+

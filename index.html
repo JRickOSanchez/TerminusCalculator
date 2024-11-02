@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WW Calculator</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+
+</head>
+<body>
+
+        <div class="container">
+            <h2>Terminus Puzzle Calculator</h2>
+            <p>Select values for X, Y, and Z</p>
+            <div class="option-group">
+                <label>Value of X</label>
+                <div class="buttons">
+                    <button onclick="selectValue('X', 20)"><img src="Images/1.jpg"></button>
+                    <button onclick="selectValue('X', 21)"><img src="Images/2.jpg"></button>
+                    <button onclick="selectValue('X', 22)"><img src="Images/3.jpg"></button>
+                    <button onclick="selectValue('X', 0)"><img src="Images/4.jpg"></button>
+                    <button onclick="selectValue('X', 10)"><img src="Images/5.jpg"></button>
+                    <button onclick="selectValue('X', 11)"><img src="Images/6.jpg"></button>
+                </div>
+                <div id="selectedX" class="selected-label"></div>
+            </div>
+
+            <div class="option-group">
+                <label>Value of Y</label>
+                <div class="buttons">
+                    <button onclick="selectValue('Y', 20)"><img src="Images/1.jpg"></button>
+                    <button onclick="selectValue('Y', 21)"><img src="Images/2.jpg"></button>
+                    <button onclick="selectValue('Y', 22)"><img src="Images/3.jpg"></button>
+                    <button onclick="selectValue('Y', 0)"><img src="Images/4.jpg"></button>
+                    <button onclick="selectValue('Y', 10)"><img src="Images/5.jpg"></button>
+                    <button onclick="selectValue('Y', 11)"><img src="Images/6.jpg"></button>
+                </div>
+                <div id="selectedY" class="selected-label"></div>
+            </div>
+
+            <div class="option-group">
+                <label>Value of Z</label>
+                <div class="buttons">
+                    <button onclick="selectValue('Z', 20)"><img src="Images/1.jpg"></button>
+                    <button onclick="selectValue('Z', 21)"><img src="Images/2.jpg"></button>
+                    <button onclick="selectValue('Z', 22)"><img src="Images/3.jpg"></button>
+                    <button onclick="selectValue('Z', 0)"><img src="Images/4.jpg"></button>
+                    <button onclick="selectValue('Z', 10)"><img src="Images/5.jpg"></button>
+                    <button onclick="selectValue('Z', 11)"><img src="Images/6.jpg"></button>
+                </div>
+                <div id="selectedZ" class="selected-label"></div>
+            </div>
+
+            <div class="actions">
+                <button onclick="resetValues()">Reset</button>
+                <button onclick="calculate()">Calculate</button>
+            </div>
+
+            <div id="result" class="result-label"></div>
+        </div>
+    
+    <script src="/Scripts/script.js"></script>
+</body>
+</html>
